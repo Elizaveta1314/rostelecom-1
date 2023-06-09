@@ -1,0 +1,1811 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: #101828;
+    font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container {
+    max-width: 1441px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1458px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+@font-face {
+    font-family: "Rostelecom Basis Medium";
+  src: url("../fonts/RostelecomBasisMedium.eot") format("embedded-opentype"), url("../fonts/RostelecomBasisMedium.woff") format("woff"), url("../fonts/RostelecomBasisMedium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Rostelecom Basis Regular";
+  src: url("../fonts/RostelecomBasisRegular.eot") format("embedded-opentype"), url("../fonts/RostelecomBasisRegular.woff") format("woff"), url("../fonts/RostelecomBasisRegular.ttf") format("truetype");
+}
+
+.header {
+    height: 8rem;
+    padding: 16px 0 16px 0;
+}
+
+@media (max-width: 767px) {
+    .header {
+        padding: 22px 0 22px 0;
+    }
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 18.5rem;
+    height: 4.8rem;
+}
+
+@media (max-width: 767px) {
+    .header__logo {
+        width: 13.7rem;
+        height: 3.5rem;
+    }
+}
+
+.header__ineer {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .header__ineer-entrance {
+        padding: 6px;
+        background: rgba(16, 24, 40, 0.03);
+        border-radius: 36px;
+    }
+}
+
+.header__ineer-img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+@media (max-width: 767px) {
+    .header__ineer-img {
+        margin-right: 0px;
+    }
+}
+
+.main {
+    background-color: #F3F3F4;
+    height: auto;
+}
+
+.main__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    -moz-column-gap: 49px;
+    column-gap: 49px;
+}
+
+@media (max-width: 1690px) {
+    .main__wrapper {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .main__wrapper {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        flex-direction: column-reverse;
+        padding-bottom: 71px;
+    }
+}
+
+@media (max-width: 420px) {
+    .main__wrapper {
+        padding-left: 10px;
+    }
+}
+
+.main__wrapper-img {
+    background-color: #F3F3F4;
+    padding-top: 45px;
+    text-align: end;
+    position: relative;
+}
+
+@media (max-width: 1180px) {
+    .main__wrapper-img {
+        padding-top: 30px;
+    }
+}
+
+.main__wrapper-img img {
+    max-width: 100%;
+    height: auto;
+    z-index: 20;
+    position: relative;
+}
+
+.main__inner {
+    margin-top: 84px;
+}
+
+@media (max-width: 1540px) {
+    .main__inner {
+        margin-top: 45px;
+    }
+}
+
+@media (max-width: 420px) {
+    .main__inner {
+        margin-top: 20px;
+    }
+}
+
+.main__inner-title {
+    width: 558px;
+}
+
+@media (max-width: 1240px) {
+    .main__inner-title {
+        width: auto;
+    }
+}
+
+.main__internal {
+    margin-top: 24px;
+}
+
+@media (max-width: 1458px) {
+    .main__internal {
+        margin-top: 10px;
+    }
+}
+
+.main__internal-line {
+    display: flex;
+    margin-bottom: 13px;
+}
+
+@media (max-width: 1458px) {
+    .main__internal-line {
+        margin-bottom: 5px;
+    }
+}
+
+.main__internal-line:last-child {
+    margin-bottom: 0px;
+}
+
+.main__internal-line_text {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.main__internal-line_text:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 1458px) {
+    .main__internal-line_text {
+        margin-right: 10px;
+    }
+}
+
+.main__internal-line_img {
+    background-color: #FF4F12;
+    border-radius: 50%;
+    min-width: 20px;
+    height: 20px;
+    position: relative;
+    margin-right: 10px;
+}
+
+@media (max-width: 1458px) {
+    .main__internal-line_img {
+        margin-right: 7px;
+    }
+}
+
+.main__internal-line_img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slider {
+    background-color: #fff;
+}
+
+.slider__wrapper {
+    height: 100%;
+    position: relative;
+}
+
+.slider__item {
+    display: flex;
+    justify-content: space-between;
+    -moz-column-gap: 103px;
+    column-gap: 103px;
+    padding-top: 56px;
+}
+
+@media (max-width: 1180px) {
+    .slider__item {
+        -moz-column-gap: 20px;
+        column-gap: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .slider__item {
+        flex-wrap: wrap;
+        padding-top: 32px;
+        padding-bottom: 128px;
+    }
+}
+
+.slider__item-shell {
+    width: 497px;
+}
+
+@media (max-width: 1458px) {
+    .slider__item-shell {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .slider__item-block {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .slider__item-block {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .slider__item-img {
+        width: 320px;
+        height: 319px;
+    }
+}
+
+@media (max-width: 350px) {
+    .slider__item-img {
+        max-width: 100%;
+    }
+}
+
+.slider__text-mb {
+    margin: 38px 0 20px 0;
+}
+
+@media (max-width: 1024px) {
+    .slider__text-mb {
+        margin: 29px 0 16px 0;
+    }
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slide-arrow .slick-arrow.slick-prev {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    box-shadow: 0px 4px 16px rgba(16, 24, 40, 0.15);
+    border-radius: 50%;
+    font-size: 0;
+    background-image: url("../img/arrow-r.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: #fff;
+    bottom: 54px;
+    left: 704px;
+}
+
+@media (max-width: 1024px) {
+    .slide-arrow .slick-arrow.slick-prev {
+        left: 72px;
+        bottom: 48px;
+    }
+}
+
+.slide-arrow .slick-arrow.slick-next {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    box-shadow: 0px 4px 16px rgba(16, 24, 40, 0.15);
+    border: none;
+    background-image: url("../img/arrow-l.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    bottom: 54px;
+    left: 632px;
+    font-size: 0;
+    background-color: #fff;
+}
+
+@media (max-width: 1024px) {
+    .slide-arrow .slick-arrow.slick-next {
+        left: 0px;
+        bottom: 48px;
+    }
+}
+
+.shop {
+    background-color: #fff;
+    padding: 98px 0 157px 0;
+}
+
+@media (max-width: 1024px) {
+    .shop {
+        padding: 38px 0 100px 0;
+    }
+}
+
+@media (max-width: 993px) {
+    .shop {
+        overflow: scroll;
+    }
+}
+
+@media (max-width: 507px) {
+    .shop {
+        padding: 38px 0 34px 0;
+    }
+}
+
+.shop__wrapper {
+    display: flex;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 993px) {
+    .shop__wrapper {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 507px) {
+    .shop__wrapper {
+        display: none;
+    }
+}
+
+.shop__wrapper-block {
+    display: flex;
+    justify-content: space-between;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+}
+
+.shop__wrapper-block-text {
+    font-family: "Rostelecom Basis Medium";
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 0 32px 0;
+    width: 467px;
+    border: 2px solid #F3F3F4;
+    border-radius: 8px;
+    margin: 40px 0 24px 0;
+}
+
+@media (max-width: 1458px) {
+    .shop__wrapper-block-text {
+        width: 420px;
+    }
+}
+
+@media (max-width: 1368px) {
+    .shop__wrapper-block-text {
+        width: 380px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .shop__wrapper-block-text {
+        width: 360px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .shop__wrapper-block-text {
+        width: 300px;
+    }
+}
+
+@media (max-width: 507px) {
+    .shop__wrapper-block-text {
+        margin: 20px 0 14px 0;
+        padding: 18px 0 19px 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.shop__wrapper-inner img {
+    border-radius: 8px;
+}
+
+@media (max-width: 1458px) {
+    .shop__wrapper-inner img {
+        width: 420px;
+    }
+}
+
+@media (max-width: 1368px) {
+    .shop__wrapper-inner img {
+        width: 380px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .shop__wrapper-inner img {
+        width: 360px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .shop__wrapper-inner img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 507px) {
+    .slider-mobile__item img {
+        width: 100%;
+        border-radius: 8px;
+    }
+}
+
+.integrations, .applications, .office {
+    width: 467px;
+}
+
+@media (max-width: 1458px) {
+    .integrations, .applications, .office {
+        width: 420px;
+    }
+}
+
+@media (max-width: 1368px) {
+    .integrations, .applications, .office {
+        width: 380px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .integrations, .applications, .office {
+        width: 360px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .integrations, .applications, .office {
+        width: 300px;
+    }
+}
+
+.container-arrow, .container-arrow-1, .container-arrow-2 {
+    position: relative;
+}
+
+.integrations-arrow .slick-arrow.slick-prev {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    box-shadow: 0px 4px 16px rgba(16, 24, 40, 0.15);
+    border-radius: 50%;
+    font-size: 0;
+    background-image: url("../img/arrow-r.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: #fff;
+    bottom: -76px;
+    left: 244px;
+}
+
+@media (max-width: 1458px) {
+    .integrations-arrow .slick-arrow.slick-prev {
+        left: 215px;
+    }
+}
+
+@media (max-width: 1368px) {
+    .integrations-arrow .slick-arrow.slick-prev {
+        left: 195px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .integrations-arrow .slick-arrow.slick-prev {
+        left: 175px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .integrations-arrow .slick-arrow.slick-prev {
+        left: 160px;
+    }
+}
+
+.integrations-arrow .slick-arrow.slick-next {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    box-shadow: 0px 4px 16px rgba(16, 24, 40, 0.15);
+    border: none;
+    background-image: url("../img/arrow-l.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    bottom: -76px;
+    left: 172px;
+    font-size: 0;
+    background-color: #fff;
+}
+
+@media (max-width: 1458px) {
+    .integrations-arrow .slick-arrow.slick-next {
+        left: 143px;
+    }
+}
+
+@media (max-width: 1368px) {
+    .integrations-arrow .slick-arrow.slick-next {
+        left: 123px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .integrations-arrow .slick-arrow.slick-next {
+        left: 103px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .integrations-arrow .slick-arrow.slick-next {
+        left: 88px;
+    }
+}
+
+.applications-arrow .slick-arrow.slick-prev {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    box-shadow: 0px 4px 16px rgba(16, 24, 40, 0.15);
+    border-radius: 50%;
+    font-size: 0;
+    background-image: url("../img/arrow-r.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: #fff;
+    bottom: -76px;
+    left: 244px;
+}
+
+@media (max-width: 1458px) {
+    .applications-arrow .slick-arrow.slick-prev {
+        left: 215px;
+    }
+}
+
+@media (max-width: 1368px) {
+    .applications-arrow .slick-arrow.slick-prev {
+        left: 195px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .applications-arrow .slick-arrow.slick-prev {
+        left: 175px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .applications-arrow .slick-arrow.slick-prev {
+        left: 160px;
+    }
+}
+
+.applications-arrow .slick-arrow.slick-next {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    box-shadow: 0px 4px 16px rgba(16, 24, 40, 0.15);
+    border: none;
+    background-image: url("../img/arrow-l.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    bottom: -76px;
+    left: 172px;
+    font-size: 0;
+    background-color: #fff;
+}
+
+@media (max-width: 1458px) {
+    .applications-arrow .slick-arrow.slick-next {
+        left: 143px;
+    }
+}
+
+@media (max-width: 1368px) {
+    .applications-arrow .slick-arrow.slick-next {
+        left: 123px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .applications-arrow .slick-arrow.slick-next {
+        left: 103px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .applications-arrow .slick-arrow.slick-next {
+        left: 88px;
+    }
+}
+
+.office-arrow .slick-arrow.slick-prev {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    box-shadow: 0px 4px 16px rgba(16, 24, 40, 0.15);
+    border-radius: 50%;
+    font-size: 0;
+    background-image: url("../img/arrow-r.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: #fff;
+    bottom: -76px;
+    left: 244px;
+}
+
+@media (max-width: 1458px) {
+    .office-arrow .slick-arrow.slick-prev {
+        left: 215px;
+    }
+}
+
+@media (max-width: 1368px) {
+    .office-arrow .slick-arrow.slick-prev {
+        left: 195px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .office-arrow .slick-arrow.slick-prev {
+        left: 175px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .office-arrow .slick-arrow.slick-prev {
+        left: 160px;
+    }
+}
+
+.office-arrow .slick-arrow.slick-next {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    box-shadow: 0px 4px 16px rgba(16, 24, 40, 0.15);
+    border: none;
+    background-image: url("../img/arrow-l.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    bottom: -76px;
+    left: 172px;
+    font-size: 0;
+    background-color: #fff;
+}
+
+@media (max-width: 1458px) {
+    .office-arrow .slick-arrow.slick-next {
+        left: 143px;
+    }
+}
+
+@media (max-width: 1368px) {
+    .office-arrow .slick-arrow.slick-next {
+        left: 123px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .office-arrow .slick-arrow.slick-next {
+        left: 103px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .office-arrow .slick-arrow.slick-next {
+        left: 88px;
+    }
+}
+
+.shop-mobile__wrapper {
+    position: relative;
+    display: none;
+}
+
+@media (max-width: 507px) {
+    .shop-mobile__wrapper {
+        display: block;
+    }
+}
+
+.shop-arrow .slick-arrow.slick-prev {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    box-shadow: 0px 4px 16px rgba(16, 24, 40, 0.15);
+    border-radius: 50%;
+    font-size: 0;
+    background-image: url("../img/arrow-r.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: #fff;
+    bottom: 65px;
+    right: -17px;
+}
+
+@media (max-width: 350px) {
+    .shop-arrow .slick-arrow.slick-prev {
+        bottom: 50px;
+    }
+}
+
+.shop-arrow .slick-arrow.slick-next {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    box-shadow: 0px 4px 16px rgba(16, 24, 40, 0.15);
+    border: none;
+    background-image: url("../img/arrow-l.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    bottom: 65px;
+    left: -17px;
+    font-size: 0;
+    background-color: #fff;
+}
+
+@media (max-width: 350px) {
+    .shop-arrow .slick-arrow.slick-next {
+        bottom: 50px;
+    }
+}
+
+.btn__main {
+    font-family: "Rostelecom Basis Regular";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    background-color: #FF4F12;
+    border-radius: 100px;
+    padding: 14px 21px;
+    margin-top: 37px;
+}
+
+@media (max-width: 1458px) {
+    .btn__main {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 420px) {
+    .btn__main {
+        display: none;
+    }
+}
+
+.services-btn {
+    padding: 14px 44px;
+    font-family: "Rostelecom Basis Regular";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 100px;
+    background-color: #FF4F12;
+    color: #fff;
+}
+
+@media (max-width: 618px) {
+    .services-btn {
+        display: none;
+    }
+}
+
+.rates__btn {
+    padding: 14px 121px;
+    font-family: "Rostelecom Basis Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    background-color: #FF4F12;
+    border-radius: 100px;
+}
+
+@media (max-width: 767px) {
+    .rates__btn {
+        width: 80%;
+        padding: 11px 0px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.rates__btn-mobile {
+    display: none;
+    padding: 14px 128px;
+    font-family: "Rostelecom Basis Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    background-color: #FF4F12;
+    border-radius: 100px;
+    max-width: 320px;
+}
+
+@media (max-width: 767px) {
+    .rates__btn-mobile {
+        display: block;
+    }
+}
+
+@media (max-width: 350px) {
+    .rates__btn-mobile {
+        padding: 14px 114px;
+    }
+}
+
+.btn-main-mobile {
+    display: none;
+}
+
+@media (max-width: 420px) {
+    .btn-main-mobile {
+        background: #EAEAEA;
+        border-radius: 100px;
+        display: flex;
+        max-width: 351px;
+        margin-top: 23px;
+    }
+
+    .btn-main-mobile img {
+        width: 9px;
+        height: 16px;
+        margin-top: 29px;
+        margin-right: 12px;
+    }
+}
+
+@media (max-width: 350px) {
+    .btn-main-mobile {
+        max-width: 317px;
+    }
+
+    .btn-main-mobile img {
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 420px) {
+    .btn-mobile-main {
+        display: block;
+        background: #FF4F12;
+        border-radius: 100px;
+        color: #fff;
+        font-family: "Rostelecom Basis Regular";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 15px 34px;
+        margin: 9px 98px 8px 10px;
+    }
+}
+
+@media (max-width: 420px) and (max-width: 350px) {
+    .btn-mobile-main {
+        margin: 9px 75px 8px 10px;
+    }
+}
+
+.btn-forms {
+    border: none;
+    background-color: #FF4F12;
+    border-radius: 4px;
+    padding: 14px 28px;
+    color: #fff;
+    margin-top: 46px;
+}
+
+@media (max-width: 1180px) {
+    .btn-forms {
+        padding: 14px 121px;
+        border-radius: 100px;
+        margin-top: 28px;
+    }
+}
+
+.title__header {
+    font-family: "Rostelecom Basis Regular";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #101828;
+}
+
+@media (max-width: 767px) {
+    .title__header {
+        display: none;
+    }
+}
+
+.titel-h1 {
+    font-family: "Rostelecom Basis Medium";
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+@media (max-width: 1458px) {
+    .titel-h1 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 420px) {
+    .titel-h1 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}
+
+.title-h2 {
+    font-family: "Rostelecom Basis Medium";
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+@media (max-width: 767px) {
+    .title-h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+.title-h3 {
+    font-family: "Rostelecom Basis Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+@media (max-width: 767px) {
+    .title-h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+.text-12px {
+    font-family: "Rostelecom Basis Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #868B95;
+}
+
+.text-14px {
+    font-family: "Rostelecom Basis Regular";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.title-16px {
+    font-family: "Rostelecom Basis Regular";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(16, 24, 40, 0.5);
+}
+
+@media (max-width: 767px) {
+    .title-16px {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+.text-16px {
+    font-family: "Rostelecom Basis Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #343B48;
+}
+
+@media (max-width: 767px) {
+    .text-16px {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+.text-18px {
+    font-family: "Rostelecom Basis Medium";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #101828;
+}
+
+.title-18px {
+    font-family: "Rostelecom Basis Regular";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+@media (max-width: 1458px) {
+    .title-18px {
+        font-size: 16px;
+    }
+}
+
+.title-18px-14 {
+    font-family: "Rostelecom Basis Regular";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+@media (max-width: 1458px) {
+    .title-18px-14 {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 350px) {
+    .title-18px-14 {
+        font-size: 12px;
+    }
+}
+
+.text-h3-28px {
+    font-family: "Rostelecom Basis Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+}
+
+.footer-text {
+    font-family: "Rostelecom Basis Regular";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(16, 24, 40, 0.5);
+}
+
+.forms-text {
+    color: rgba(16, 24, 40, 0.5);
+    font-family: "Rostelecom Basis Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+@media (max-width: 1180px) {
+    .forms-text {
+        margin-top: 12px;
+    }
+}
+
+.footer-text_link {
+    color: #101828;
+}
+
+.nuber-bold {
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+}
+
+@media (max-width: 767px) {
+    .nuber-bold {
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+
+.text-number {
+    font-family: "Rostelecom Basis Medium";
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+@media (max-width: 767px) {
+    .text-number {
+        font-size: 28px;
+        line-height: 32px;
+        margin-top: 8px;
+    }
+}
+
+.effectiveness {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+@media (max-width: 1458px) {
+    .effectiveness {
+        padding: 40px 0;
+    }
+}
+
+.effectiveness__wrap {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+@media (max-width: 1024px) {
+    .effectiveness__wrap {
+        flex-wrap: wrap;
+        justify-content: start;
+        row-gap: 28px;
+    }
+}
+
+.effectiveness__inner {
+    width: 467px;
+}
+
+.effectiveness__inner img {
+    width: 60px;
+    height: 60px;
+}
+
+@media (max-width: 1024px) {
+    .effectiveness__inner {
+        width: 30%;
+    }
+}
+
+@media (max-width: 767px) {
+    .effectiveness__inner {
+        display: flex;
+        width: 100%;
+    }
+
+    .effectiveness__inner img {
+        width: 47px;
+        height: 47px;
+    }
+}
+
+@media (max-width: 767px) {
+    .effectiveness__inner-mobile {
+        margin-left: 20px;
+    }
+}
+
+.margin-top-2 {
+    margin-top: 2px;
+}
+
+@media (max-width: 767px) {
+    .margin-top-2 {
+        margin-top: 20px;
+    }
+}
+
+.margin-top-12 {
+    margin-top: 12px;
+}
+
+.margin-bottom-16 {
+    margin-bottom: 1.6px;
+}
+
+@media (max-width: 767px) {
+    .margin-top-20 {
+        margin-top: 20px;
+    }
+}
+
+.margin-top-28 {
+    margin-top: 28px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1368px) {
+    .margin-bottom-30 {
+        margin-bottom: 25px;
+    }
+}
+
+.margin-top-40 {
+    margin-top: 40px;
+}
+
+@media (max-width: 767px) {
+    .margin-top-40 {
+        margin-top: 0;
+    }
+}
+
+.rates-margin {
+    padding: 0 20px;
+}
+
+.rates-padding {
+    margin: 0 20px;
+}
+
+@media (max-width: 767px) {
+    .rates-padding {
+        margin: 10px 20px 0 20px;
+    }
+}
+
+.additional {
+    background-color: #F8F8F8;
+    padding: 98px 0;
+}
+
+@media (max-width: 767px) {
+    .additional {
+        padding: 50px 0 57px 0;
+        overflow-x: auto;
+    }
+
+    .additional::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+.additional__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 40px;
+}
+
+@media (max-width: 767px) {
+    .additional__wrapper {
+        padding-top: 28px;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+}
+
+.additional__inner {
+    border: 2px solid #F3F3F4;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 467px;
+    height: 188px;
+    padding-left: 30px;
+}
+
+@media (max-width: 1458px) {
+    .additional__inner {
+        width: 47%;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .additional__inner {
+        min-width: 230px;
+        height: 284px;
+        padding-left: 0;
+        padding: 32px 20px 38px 20px;
+    }
+}
+
+.additional__inner-top {
+    padding-top: 32px;
+    display: flex;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+}
+
+@media (max-width: 767px) {
+    .additional__inner-top {
+        padding-top: 0px;
+        display: block;
+    }
+}
+
+.additional__inner-text {
+    margin-left: 68px;
+}
+
+@media (max-width: 767px) {
+    .additional__inner-text {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 767px) {
+    .additional__title {
+        white-space: nowrap;
+        width: 360px;
+    }
+}
+
+.services {
+    background-color: #fff;
+    padding: 120px 0 115px 0;
+}
+
+@media (max-width: 1368px) {
+    .services {
+        padding: 0;
+    }
+}
+
+.services__wrapper {
+    background-color: #F8F8F8;
+    padding: 80px 75px 80px 91px;
+    display: flex;
+    justify-content: space-between;
+    -moz-column-gap: 88px;
+    column-gap: 88px;
+}
+
+@media (max-width: 1368px) {
+    .services__wrapper {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 0 0 0 0;
+        background-color: #fff;
+        padding: 40px 0;
+    }
+}
+
+.services__img img {
+    border-radius: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    max-width: 520px;
+}
+
+@media (max-width: 767px) {
+    .services__img img {
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 350px) {
+    .services__img img {
+        max-width: 290px;
+    }
+}
+
+@media (max-width: 1368px) {
+    .services__item {
+        margin-top: 32px;
+    }
+}
+
+.services__item-inner {
+    display: flex;
+}
+
+.services__item-inner_img {
+    background-color: #FF4F12;
+    border-radius: 50%;
+    min-width: 20px;
+    height: 20px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.services__item-inner_img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rates {
+    background-color: #F8F8F8;
+    padding: 144px 0 133px 0;
+}
+
+@media (max-width: 767px) {
+    .rates {
+        padding: 20px 0 0 0;
+    }
+}
+
+.rates__wrapper {
+    padding-top: 37px;
+    display: flex;
+    justify-content: flex-start;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+}
+
+@media (max-width: 1180px) {
+    .rates__wrapper {
+        overflow-x: auto;
+    }
+
+    .rates__wrapper::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .rates__wrapper {
+        padding: 20px 0 32px 0;
+    }
+}
+
+.rates__item {
+    background-color: #fff;
+    width: 345px;
+    height: 390px;
+    padding: 24px 0 20px 0;
+    border: 2px solid #F3F3F4;
+    border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+    .rates__item {
+        padding: 20px 0 36px 0;
+        min-width: 235px;
+        height: 361px;
+    }
+}
+
+@media (max-width: 767px) {
+    .rates__item {
+        height: 400px;
+    }
+}
+
+.rates__item-line {
+    border-top: 1px solid #F3F3F4;
+    border-bottom: 1px solid #F3F3F4;
+    margin-top: 46px;
+    padding: 12px 0;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Rostelecom Basis Regular";
+}
+
+@media (max-width: 767px) {
+    .rates__item-line {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+.rates__item-number {
+    padding-top: 12px;
+    display: flex;
+    -moz-column-gap: 4px;
+    column-gap: 4px;
+    justify-content: end;
+    margin-right: 20px;
+}
+
+@media (max-width: 767px) {
+    .rates__item-number {
+        padding-top: 8px;
+    }
+}
+
+.rates__item-ryb {
+    font-family: "Rostelecom Basis Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.rates__item-ryb_line {
+    border-bottom: 1px solid #101828;
+    padding-top: 3px;
+}
+
+.rates__indent {
+    margin-top: 16px;
+}
+
+.forms {
+    background-color: #F8F8F8;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1180px) {
+    .forms {
+        padding: 40px 0 52px 0;
+    }
+}
+
+.forms__wrapper {
+    background-color: #fff;
+    padding: 64px 48px 64px 56px;
+    width: 980px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1180px) {
+    .forms__wrapper {
+        width: 100%;
+        background-color: #F8F8F8;
+        padding: 0;
+    }
+}
+
+.forms__wrapper-item1 {
+    width: 524px;
+}
+
+@media (max-width: 1180px) {
+    .forms__wrapper-item1 {
+        width: 100%;
+    }
+}
+
+.forms__wrapper-item1_text {
+    display: none;
+}
+
+@media (max-width: 1180px) {
+    .forms__wrapper-item1_text {
+        display: block;
+        border-bottom: 2px solid rgba(16, 24, 40, 0.03);
+        padding: 20px 0;
+    }
+}
+
+.forms__wrapper-item2 {
+    border-left: 2px solid rgba(16, 24, 40, 0.03);
+    padding-left: 40px;
+}
+
+@media (max-width: 1180px) {
+    .forms__wrapper-item2 {
+        display: none;
+    }
+}
+
+.forms__wrapper-gift {
+    background-color: #FF4F12;
+    padding: 16.5px 45px 23.5px 20px;
+    display: flex;
+    -moz-column-gap: 11.5px;
+    column-gap: 11.5px;
+    font-family: "Rostelecom Basis Medium";
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 121.6%;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.forms__wrapper-img {
+    width: 46px;
+    height: 43px;
+}
+
+.forms__input-text {
+    border-bottom: 2px solid #343B48;
+}
+
+input[type=text], input[type=email], input[type=tel] {
+    border: none;
+    border-bottom: 2px solid rgba(16, 24, 40, 0.1);
+    background-color: #fff;
+    color: rgba(16, 24, 40, 0.5);
+    font-family: "Rostelecom Basis Regular";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: block;
+    width: 524px;
+}
+
+@media (max-width: 1180px) {
+    input[type=text], input[type=email], input[type=tel] {
+        background-color: #F8F8F8;
+        width: 100%;
+    }
+}
+
+input[placeholder] {
+    text-overflow: ellipsis;
+    padding-bottom: 12px;
+    margin-top: 36px;
+}
+
+input[placeholder]:first-child {
+    margin-top: 28px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 42px 12px 0 0;
+}
+
+.custom-checkbox + label {
+    display: inline-flex;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    margin-top: 42px;
+    font-family: "Rostelecom Basis Medium";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #101828;
+}
+
+@media (max-width: 1180px) {
+    .custom-checkbox + label {
+        margin-top: 32px;
+    }
+}
+
+.custom-checkbox + label a {
+    color: #101828;
+}
+
+.conditions {
+    color: #FF4F12;
+}
+
+.custom-checkbox + label::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin-right: 12px;
+    border: 2px solid rgba(16, 24, 40, 0.5);
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.custom-checkbox:checked + label::before {
+    border-color: #FF4F12;
+    background-color: #fff;
+    background-image: url("../img/Stroke.svg");
+}
+
+.footer {
+    padding: 56px 0 116px;
+}
+
+@media (max-width: 767px) {
+    .footer {
+        padding: 32px 0;
+    }
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+}
+
+@media (max-width: 1180px) {
+    .footer__wrapper {
+        display: block;
+    }
+}
+
+.footer__wrapper-inner {
+    width: 609px;
+}
+
+@media (max-width: 1180px) {
+    .footer__wrapper-inner {
+        padding: 12px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer__wrapper-inner {
+        width: 100%;
+    }
+}
